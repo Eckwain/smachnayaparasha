@@ -14,50 +14,44 @@ function calculateSum() {
   const outputResultElement = document.getElementById("calculated-sum");
 
   outputResultElement.textContent = sumUpToNumber;
-
 }
 
 calculateSumButtonElement.addEventListener("click", calculateSum);
 
-
 //Second example: highlight-links
 
-const highlightButtonElement = document.getElementById('highlightButton');
+const highlightButtonElement = document.getElementById("highlightButton");
 
 function highlightLinks() {
-    const anchorElements = document.querySelectorAll('#highlight-links a');
+  const anchorElements = document.querySelectorAll("#highlight-links a");
 
-    for (const anchorElement of anchorElements) {
-        anchorElement.classList.add('highlighted');
-    }
+  for (const anchorElement of anchorElements) {
+    anchorElement.classList.add("highlighted");
+  }
 }
 
-
-highlightButtonElement.addEventListener('click', highlightLinks);
+highlightButtonElement.addEventListener("click", highlightLinks);
 
 //Third example: spoiler
 
-const spoilerButton = document.querySelector('#spoiler button');
+const spoilerButton = document.querySelector("#spoiler button");
 
 const myInfo = {
-    myName: "Eckwain",
-    myAge: 16,
-    myDescription: 12
+  myName: "Eckwain",
+  myAge: 16,
+  myDescription: 12,
 };
 
-function showSpoiler () {
-    const sectorSpoiler = document.getElementById("spoiler");
+function showSpoiler() {
+  const sectorSpoiler = document.getElementById("spoiler");
 
-    sectorSpoiler.innerHTML = '';
-    
-    for (const key in myInfo) {
-        const newUserDataElement = document.createElement('li');  
-        newUserDataElement.textContent = key.toUpperCase() + ': ' + myInfo[key];
-        sectorSpoiler.append(newUserDataElement);
-    }
+  sectorSpoiler.innerHTML = "";
 
+  for (const key in myInfo) {
+    const newUserDataElement = document.createElement("li");
+    newUserDataElement.textContent = key.toUpperCase() + ": " + myInfo[key];
+    sectorSpoiler.append(newUserDataElement);
+  }
 }
 
-spoilerButton.addEventListener('click', showSpoiler);
-
-
+spoilerButton.addEventListener("click", showSpoiler);
