@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>крестики-нолики</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tictactoe.css" />
+    <link rel="stylesheet" href="css/overlay.css" />
+    <link rel="stylesheet" href="css/configuration.css" />
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <header id="main-header">
+      <h1>Крестики-нолики</h1>
+      <p>Сделано с помощью хтмла, сэсэсэса и жабаскрипта</p>
+    </header>
+    <main>
+      <aside class="modal" id="config-overlay">
+        <h2>Выберите имя</h2>
+        <form>
+          <div class="form-control">
+            <label for="playername">Player name</label>
+            <input type="text" name="playername" id="playername" />
+          </div>
+          <div>
+            <button type="button" class="btn btn-alt">Cancel</button>
+            <button type="submit" class="btn">Confirm</button>
+          </div>
+        </form>
+      </aside>
+      <section id="game-configuration">
+        <ol>
+          <li>
+            <article>
+              <h2>Игрок №1</h2>
+              <h3>Имя игрока</h3>
+              <p class="player-symbol">X</p>
+              <button class="btn btn-alt">ИЗМЕНИТЬ</button>
+            </article>
+          </li>
+          <li>
+            <article>
+              <h2>Игрок №2</h2>
+              <h3>Имя игрока</h3>
+              <p class="player-symbol">O</p>
+              <button class="btn btn-alt">ИЗМЕНИТЬ</button>
+            </article>
+          </li>
+        </ol>
+        <button class="btn">Начать новую игру</button>
+      </section>
+
+      <section id="active-game">
+        <article>
+          <h3>You won!, <span id="winner-player-name"></span></h3>
+          <p>Нажмите "Начать новую игру" чтобы начать игру!</p>
+        </article>
+
+        <p>Ваш ход <span id="active-player-name">PLAYER NAME</span>!</p>
+        <ol>
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li></li>
+          <li></li>
+          <li></li>
+
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </section>
+    </main>
+  </body>
+</html>
