@@ -1,8 +1,9 @@
-* {
-  
+/* * {
+  margin: 0;
+  padding: 0;  
 }
 
-
+ */
 
 body {
   margin: 0;
@@ -15,6 +16,7 @@ body {
   background-color: rgb(96, 96, 96);
   color: white;
   padding: 2rem 5%;
+  margin: 0;
 }
 
 .btn {
